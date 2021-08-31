@@ -1,12 +1,15 @@
-  
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700'); 
 * {
     margin: 0px;
     padding: 0px;
 }
+:root {
+    --color: #3f888f;
+  }
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #2e2e2e;
+    background-color: black;
     color: black;
 }
 a{
@@ -29,7 +32,6 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
     background-color: black;
 }
 .menu{
@@ -52,11 +54,12 @@ li{
 }
 
 .bloco-sobre{
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     padding: 15px;
     background-color: rgba(1,10,15,0.5);
     width: 700px;
-
 }
 
 .bloco-sobre h1{
@@ -77,4 +80,140 @@ li{
     object-position: center;
     border-radius: 40px;
     border: solid 1px white;
+}
+
+.planos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+.card {
+    font-family: 'Heebo';
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+
+.card h1 {
+margin: 0;
+font-size: 1.5em;
+line-height: 1.2em;
+}
+
+.card p {
+    font-size: 0.75em;
+    font-family: 'Open Sans';
+    margin-top: 0.5em;
+    line-height: 2em;
+  }
+
+.card .tags {
+display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+}
+  
+.card:hover .tags .tag {
+background: var(--color);
+color: white;
+}
+
+.card:hover {
+color: var(--color);
+}
+
+@media (max-width: 780px)
+{
+    #section1{
+        height: 100%;
+    }
+    .bloco-sobre{
+        text-align: justify;
+        padding: 15px;
+        background-color: rgba(1,10,15,0.5);
+        width: 500px;
+    }
+    .bloco-sobre img{
+        width: 360px;
+        height: 170px;
+        margin: 5px auto;
+    }
+    .card {
+        margin-bottom: 15px;
+        margin-left: 0px;
+      }
+
+}
+
+@media (max-width: 500px)
+{
+    .card {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+      }
+}
+
+@media (max-width: 390px)
+{
+    .bloco-sobre{
+        text-align: justify;
+        padding: 15px;
+        background-color: rgba(1,10,15,0.5);
+        width: 100vw;
+    }
+    .bloco-sobre img{
+        width: 360px;
+        height: 200px;
+        margin: 10px 10px 10px 10px;
+    }
+    .bloco-sobre h1{
+        margin-left: 40px;
+    }
+    .bloco-sobre p{
+        margin-left: 70px;
+    }
+    .menu-container{
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 320px)
+{
+    .bloco-sobre img{
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+    .bloco-sobre p{
+        margin-left: 50px;
+    }
+    .planos{
+        padding: 1rem;
+      }
+
 }
