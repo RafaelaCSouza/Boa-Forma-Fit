@@ -1,0 +1,80 @@
+  
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2e2e2e;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+.logo{
+ margin-left: 10px;
+ padding: 5px;
+}
+
+.menu-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    background-color: black;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu li{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+#section1{
+    background-image: url('./imgs/back-gym.jpg');
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    height: 90vh;
+}
+
+.bloco-sobre{
+    text-align: justify;
+    padding: 15px;
+    background-color: rgba(1,10,15,0.5);
+    width: 700px;
+
+}
+
+.bloco-sobre h1{
+    text-align: center;
+}
+.bloco-sobre p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+.bloco-sobre img{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 650px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    border: solid 1px white;
+}
